@@ -88,12 +88,9 @@ html {
 
 .inicio .contenido-banner img {
     margin-top: 40px;
-    border: 10px solid #1CB698;
     display: block;
     width: 80%;
     margin: auto;
-    border-radius: 100%;
-
 }
 
 .inicio .contenido-banner h1 {
@@ -108,21 +105,27 @@ html {
 }
 
 .inicio .contenido-banner .redes a {
-    color: #fff;
+    color: hsl(0, 0%, 100%);
     display: inline-block;
     text-decoration: none;
-    border: 1px, solid #fff;
     border-radius: 100px;
     width: 42px;
     height: 42px;
-    line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
 }
 
+.inicio .contenido-banner .redes img {
+    height: 42px;
+    width: 42px;
+}
+
 .inicio .contenido-banner .redes a:hover {
-    background-color: #1CB698;
+    transform: scale(1.1);
+    /* Aumenta el tamaño de la imagen al 110% */
+
+
 }
 
 /* Sobremi  */
@@ -220,7 +223,12 @@ html {
 
 .sobremi .fila .col .contenedor-intereses .interes i {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes img {
+    width: 45px;
+    height: 45px;
 }
 
 .sobremi button {
@@ -417,15 +425,22 @@ footer .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
-    border: 1px, solid #fff;
-    border-radius: 100px;
     width: 42px;
     height: 42px;
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+}
 
+footer .redes img{
+    width: 42px;
+    height: 42px;
+}
+
+
+footer .redes a:hover {
+    transform: scale(1.1);
 }
 
 footer .arriba {
@@ -462,37 +477,39 @@ footer .arriba {
         width: 180px;
     }
 
-    nav.responsive ul{
+    nav.responsive ul {
         display: block !important;
     }
-    nav.responsive ul li{
-        border-bottom:  1px solid #fff;
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 }
 
-@media screen and (max-width:700px){
-    .sobremi .fila{
+@media screen and (max-width:700px) {
+    .sobremi .fila {
         display: block;
     }
-    .sobremi .fila .col{
+
+    .sobremi .fila .col {
         width: fit-content;
     }
 
-    .portafolio .galeria{
+    .portafolio .galeria {
         display: block;
         width: 100%;
 
     }
 
 
-    .portafolio .galeria .proyecto{
+    .portafolio .galeria .proyecto {
         max-width: 100%;
     }
 
-    .portafolio .galeria .proyecto img{
+    .portafolio .galeria .proyecto img {
         width: 100%;
     }
 
-    
+
 }
