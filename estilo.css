@@ -353,16 +353,45 @@ html {
     padding: 20px 0;
 }
 
+.contacto h3 {
+    font-size: 38px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto div p img {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.contacto div p {
+    font-size: 18px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 100px;
+}
+
 .contacto .fila {
     display: flex;
     justify-content: center;
 
 }
 
+.correo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contacto .col {
     width: 50%;
     padding: 10px;
     position: relative;
+
+
 }
 
 .contacto .col input,
@@ -407,6 +436,8 @@ html {
     width: 100%;
 }
 
+
+/* Seccion footer */
 footer {
     background-color: #252A2E;
     color: #fff;
@@ -414,33 +445,55 @@ footer {
     text-align: center;
     position: relative;
     width: 100%;
-
+    background: linear-gradient(45deg, #1CB698, #4caf50);
+    color: white; /* Texto claro sobre fondo oscuro */
+    padding: 30px 0;
 }
+
+footer .fila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px; /* Espacio interno */
+    
+    color: white; /* Color de texto claro */
+}
+
 
 footer .redes {
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
-footer .redes a {
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
-}
 
-footer .redes img{
+
+footer .redes img {
     width: 42px;
     height: 42px;
+    margin-left: 20px;
+    margin-right: 20px
 }
 
 
 footer .redes a:hover {
     transform: scale(1.1);
+}
+
+
+footer div h2 {
+    font-size: 34px;
+    font-family: 'Righteous';
+    text-align: center;
+}
+
+footer div h3 {
+    font-size: 18px;
+    font-family: 'Righteous';
+    text-align: center;
+    margin-top: 10px;
 }
 
 footer .arriba {
