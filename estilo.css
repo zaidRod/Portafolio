@@ -150,9 +150,14 @@ html {
 }
 
 .sobremi .contenido-seccion p {
-    font: 18px;
+    font-size: 20px;
     line-height: 22px;
     margin-bottom: 20px;
+
+}
+
+.sobremi .contenido-sobreMi{
+    margin-right: 15px;
 
 }
 
@@ -189,6 +194,8 @@ html {
     display: inline-block;
     color: #1CB698;
     width: 130px;
+    font-size: 22px;
+    margin: 15px;
 }
 
 .sobremi .fila .col ul li span {
@@ -196,6 +203,8 @@ html {
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 22px;
+    margin: 15px;
 }
 
 .sobremi .fila .col .contenedor-intereses {
