@@ -90,8 +90,6 @@ html {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    
-     
     align-items: center;
     justify-content: center;
     border-radius: 40px;
@@ -127,10 +125,29 @@ html {
     font-family: 'Righteous';
 }
 
-.inico .contenido-banner h2 {
+ .inico .contenido-banner h2 {
     font-size: 15px;
     font-weight: normal;
+} 
+
+.inicio .contenido-banner .tituloInicio {
+    display: block;
+    font-family: 'Righteous';
+    white-space: nowrap;
+    border-right: 4px solid;
+    animation: typing 3s steps(28) infinite, blink .5s infinite step-end alternate;
+    overflow: hidden;
 }
+
+@keyframes typing{
+    from {width: 0}
+    to{width: 105%;}
+}
+@keyframes blink {
+    50% {border-color: transparent;}
+    
+}
+
 
 .inicio .contenido-banner .redes a {
     display: inline-block;
@@ -151,13 +168,14 @@ html {
 
 .inicio .tarjeta{
     margin: 0;
-    padding: 2em;
+    padding: 15px;
     font-family: 'Righteous';
     font-weight: normal;
     background-color: #101010;
     text-align: center;
     border-radius: 10%;
     position: relative;
+    font-size: 20px;
 
 }
 @property --angle{
@@ -175,11 +193,10 @@ html {
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    /* background-color: red; */
     padding: 3px;
     z-index: -1;
     border-radius: 10%;
-    background-image: conic-gradient(from var(--angle),transparent 50%, #ff4545,#00ff99,#006aff,#ff4545);
+    background-image: conic-gradient(from var(--angle), transparent 50%, #1CB698, #006aff, #ff4545);
     animation: 3s spin linear infinite;
 }
 .tarjeta::before{
@@ -242,6 +259,7 @@ html {
 
 .sobremi .fila .col {
     width: 50%;
+    margin-top: 20px;
 }
 
 .sobremi .fila .col h3 {
@@ -249,6 +267,7 @@ html {
     font-family: 'Righteous';
     margin-bottom: 25px;
     margin-top: 5px;
+    text-align: center;
 }
 
 .sobremi .fila .col ul {
@@ -276,9 +295,15 @@ html {
     margin: 15px;
 }
 
+
+
+
 .sobremi .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
 
 }
 
