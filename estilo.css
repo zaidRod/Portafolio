@@ -111,11 +111,11 @@ html {
 .inicio .contenedor-img img {
     justify-content: center;
     align-items: center;
-    height: 250px;
-    width: 250px;
+    height: 70%;
+    width: 70%;
     border: 5px solid white;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 100%;
 }
 
 
@@ -851,9 +851,26 @@ footer .arriba {
 
     }
 
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
 
     .portafolio .galeria .proyecto {
+        display: block;
         max-width: 100%;
+        justify-content: center;
+    }
+    .portafolio .galeria .proyecto .contenedorInfoProy {
+        max-width: 100%;
+        margin: 15px;
+        
     }
 
     .portafolio .galeria .proyecto img {
