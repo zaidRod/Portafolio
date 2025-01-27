@@ -877,5 +877,36 @@ footer .arriba {
         width: 100%;
     }
 
+    .inicio .contenidoInicio{
+        display: block;
+        width: 100%; 
+        margin: 0 30px;   
+    }
+
+    .inicio .contenidoInicio .contenedor-img{
+        padding-top: 5px;
+        width: 100%; 
+        justify-content: center;
+        
+    }
+
+    .correo{
+        display: block;
+        
+    
+    }
+
+    .inicio .contenido-banner {
+       margin-top: 0;
+       padding: 0;
+
+    }
+
+    .inicio .contenido-banner h1 {
+        margin-top: 0;
+        padding: 0;
+ 
+     }
+
 
 }
