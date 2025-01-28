@@ -20,7 +20,7 @@ html {
     top: 0;
     left: 0;
     z-index: 99;
-    
+
 }
 
 .contenedor-header header {
@@ -71,7 +71,7 @@ html {
 .inicio {
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(img/fondo.jpg);
     background-size: cover;
-    
+
     color: #fff;
     display: flex;
     align-items: center;
@@ -79,11 +79,11 @@ html {
     position: relative;
 }
 
-.inicio .contenidoInicio{
+.inicio .contenidoInicio {
     display: flex;
     justify-content: space-evenly;
-    width: 100%; 
-    margin: 0 30px;   
+    width: 100%;
+    margin: 0 30px;
 }
 
 .inicio .contenido-banner {
@@ -98,21 +98,21 @@ html {
     z-index: 1;
     margin-top: 10px;
     margin-bottom: 10px;
-    
+
 }
 
 .inicio .contenedor-img {
     display: flex;
     align-items: center;
     margin: 10px;
-    
+
 }
 
 .inicio .contenedor-img img {
     justify-content: center;
     align-items: center;
-    height: 70%;
-    width: 70%;
+    height: 300px;
+    width: 300px;
     border: 5px solid white;
     object-fit: cover;
     border-radius: 100%;
@@ -125,10 +125,10 @@ html {
     font-family: 'Righteous';
 }
 
- .inico .contenido-banner h2 {
+.inico .contenido-banner h2 {
     font-size: 15px;
     font-weight: normal;
-} 
+}
 
 .inicio .contenido-banner .tituloInicio {
     display: block;
@@ -139,17 +139,26 @@ html {
     overflow: hidden;
 }
 
-@keyframes typing{
-    from {width: 0}
-    to{width: 105%;}
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 105%;
+    }
 }
+
 @keyframes blink {
-    50% {border-color: transparent;}
-    
+    50% {
+        border-color: transparent;
+    }
+
 }
 
 
-.inicio .contenido-banner .redes a {
+.inicio .contenido-banner .redes a,
+.copiarPorta {
     display: inline-block;
     margin: 40px 15px;
     transition: .3s;
@@ -160,13 +169,19 @@ html {
     width: 50px;
 }
 
-.inicio .contenido-banner .redes a:hover {
+.inicio .contenido-banner .redes .copiarPorta {
+    background-color: transparent;
+}
+
+
+.inicio .contenido-banner .redes a:hover,
+.copiarPorta {
     transform: scale(1.3);
     /* Aumenta el tamaño de la imagen al 110% */
 }
 
 
-.inicio .tarjeta{
+.inicio .tarjeta {
     margin: 0;
     padding: 15px;
     font-family: 'Righteous';
@@ -178,13 +193,15 @@ html {
     font-size: 20px;
 
 }
-@property --angle{
+
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
-.inicio .tarjeta::after, .inicio .tarjeta::before  {
+.inicio .tarjeta::after,
+.inicio .tarjeta::before {
     --angle: 0deg;
     content: '';
     position: absolute;
@@ -199,16 +216,19 @@ html {
     background-image: conic-gradient(from var(--angle), transparent 50%, #1CB698, #006aff, #ff4545);
     animation: 3s spin linear infinite;
 }
-.tarjeta::before{
+
+.tarjeta::before {
     filter: blur(1.5rem);
     opacity: 0.5;
 }
-@keyframes spin{
-    from{
-        --angle:0deg;
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
     }
-    to{
-        --angle:360deg;
+
+    to {
+        --angle: 360deg;
     }
 }
 
@@ -302,8 +322,8 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
-    
+
+
 
 }
 
@@ -364,75 +384,91 @@ html {
     width: 100%;
 
 }
+
 /* SECCION CURRICULUM */
-.curriculum{
+.curriculum {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+
+.curriculum .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.curriculum h2{
+
+.curriculum h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.curriculum .fila{
+
+.curriculum .fila {
     display: flex;
     justify-content: space-between;
 }
-.curriculum .fila .col{
+
+.curriculum .fila .col {
     width: 49%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+
+.curriculum .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
+
+.curriculum .fila .izquierda {
     border-right: 2px solid #252A2E;
 }
-.curriculum .fila .derecha{
+
+.curriculum .fila .derecha {
     border-left: 2px solid #252A2E;
 }
-.curriculum .fila .item{
+
+.curriculum .fila .item {
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
 }
-.curriculum .fila .item h4{
+
+.curriculum .fila .item h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .casa{
+
+.curriculum .fila .item .casa {
     color: #1CB698;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+
+.curriculum .fila .item .fecha {
     display: block;
     color: #1CB698;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+
+.curriculum .fila .item p {
     line-height: 24px;
 }
-.curriculum .fila .izq{
+
+.curriculum .fila .izq {
     border-right: 2px solid #1CB698;
     margin-right: 20px;
 }
-.curriculum .fila .der{
+
+.curriculum .fila .der {
     border-left: 2px solid #1CB698;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+
+.curriculum .fila .item .conectori {
     height: 2px;
     background-color: #1CB698;
     width: 47px;
@@ -441,7 +477,8 @@ html {
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+
+.curriculum .fila .item .conectori .circuloi {
     display: block;
     height: 10px;
     width: 10px;
@@ -451,7 +488,8 @@ html {
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+
+.curriculum .fila .item .conectord {
     height: 2px;
     background-color: #1CB698;
     width: 47px;
@@ -460,7 +498,8 @@ html {
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+
+.curriculum .fila .item .conectord .circulod {
     display: block;
     height: 10px;
     width: 10px;
@@ -496,47 +535,16 @@ html {
     justify-content: space-around;
 }
 
+
 .portafolio .galeria .proyecto {
     position: relative;
-    max-width: 340px;
     height: fit-content;
     margin: 10px;
-    cursor: pointer;
-
-}
-
-.portafolio .galeria .proyecto img {
-    width: 100%;
-    display: block;
-}
-
-.portafolio .galeria .proyecto .overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
-    opacity: 0;
-}
-
-.portafolio .galeria .proyecto .overlay h3 {
-    margin-bottom: 20px;
-    transition: 1s;
-}
-
-.portafolio .galeria .proyecto {
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding: 20px;
-    background-color: #1E1E1E; /* Fondo oscuro para el contenedor */
+    background-color: #1E1E1E;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -544,11 +552,11 @@ html {
     max-width: min-content;
     height: auto;
     max-height: min-content;
-    
+
 }
 
 .portafolio .galeria .proyecto:hover {
-    transform: translateY(-5px); /* Levanta un poco la tarjeta al pasar el mouse */
+    transform: translateY(-5px);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -556,16 +564,55 @@ html {
     width: 200px;
     height: auto;
     border-radius: 10px;
-    object-fit: cover; /* Para asegurarte de que la imagen se ajuste sin deformarse */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+
 }
+
+/* Modal para ampliar las imagenes al dar click */
+.modal-Contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .modal-Contenedor img{
+    
+}
+.modal-Contenedor.active {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+}
+
+  .modal-Contenedor::after{
+    content: "";
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+       
+}  */
+ 
+
+
+
+
+
+
 
 .portafolio .galeria .proyecto .contenedorInfoProy {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
-    max-width: calc(100% - 140px); /* Ajusta según el tamaño de la imagen */
+    max-width: calc(100% - 140px);
+    /* Ajusta según el tamaño de la imagen */
 }
 
 .portafolio .galeria .proyecto h3 {
@@ -608,14 +655,16 @@ html {
 }
 
 .portafolio .galeria .proyecto .interes:hover {
-    background-color: #363A3E; /* Color más claro al pasar el mouse */
+    background-color: #363A3E;
+    /* Color más claro al pasar el mouse */
     transform: scale(1.1);
 }
 
 .portafolio .galeria .proyecto .interes img {
     height: 35px;
     width: 35px;
-    filter: brightness(0.9); /* Ajusta la imagen ligeramente */
+    filter: brightness(0.9);
+    
 }
 
 .portafolio .galeria .proyecto .interes span {
@@ -624,6 +673,7 @@ html {
     color: #FFFFFF;
     text-align: center;
 }
+
 /* seccion contacto */
 .contacto {
     background-image: url(img/contact_bg.png);
@@ -851,13 +901,15 @@ footer .arriba {
 
     }
 
-    .curriculum .fila{
+    .curriculum .fila {
         display: block;
     }
-    .curriculum .fila .col{
+
+    .curriculum .fila .col {
         width: 90%;
     }
-    .curriculum .fila .derecha{
+
+    .curriculum .fila .derecha {
         margin-left: 20px;
     }
 
@@ -867,46 +919,47 @@ footer .arriba {
         max-width: 100%;
         justify-content: center;
     }
+
     .portafolio .galeria .proyecto .contenedorInfoProy {
         max-width: 100%;
         margin: 15px;
-        
+
     }
 
     .portafolio .galeria .proyecto img {
         width: 100%;
     }
 
-    .inicio .contenidoInicio{
+    .inicio .contenidoInicio {
         display: block;
-        width: 100%; 
-        margin: 0 30px;   
+        width: 100%;
+        margin: 0 30px;
     }
 
-    .inicio .contenidoInicio .contenedor-img{
+    .inicio .contenidoInicio .contenedor-img {
         padding-top: 5px;
-        width: 100%; 
+        width: 100%;
         justify-content: center;
-        
+
     }
 
-    .correo{
+    .correo {
         display: block;
-        
-    
+
+
     }
 
     .inicio .contenido-banner {
-       margin-top: 0;
-       padding: 0;
+        margin-top: 0;
+        padding: 0;
 
     }
 
     .inicio .contenido-banner h1 {
         margin-top: 0;
         padding: 0;
- 
-     }
+
+    }
 
 
 }
